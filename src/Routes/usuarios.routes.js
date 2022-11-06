@@ -26,8 +26,8 @@ router.post('/usuario', async(req, res)=>{
                 port: '465',
                 secure: true,
                 auth: {
-                    user:'jeasson.js@gmail.com',
-                    pass: 'dcmflxjqfjfykozj'
+                    user:'',
+                    pass: ''
                 }
             });
             const mailOptions = {
