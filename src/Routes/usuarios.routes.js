@@ -26,14 +26,14 @@ router.post('/usuario', async(req, res)=>{
                 port: '465',
                 secure: true,
                 auth: {
-                    user:'',
+                    user:'correo origen',
                     pass: ''
                 }
             });
             const mailOptions = {
-                from:'jeasson.js@gmail.com',
+                from:'correo origen',
                 to: req.body.correo,
-                replyTo: 'jeasson.js@gmail.com',
+                replyTo: 'correo origen',
                 subject: 'Mensaje de registro',
                 text: 'hola',
                 html: htmlMail
